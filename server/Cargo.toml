@@ -1,0 +1,18 @@
+[package]
+name = "server"
+version = "0.1.0"
+authors = ["Nick Senger <dev@nsenger.com>"]
+edition = "2021"
+
+[dependencies]
+dotenv = { workspace = true }
+env_logger = { workspace = true }
+futures = { workspace = true }
+itertools = { workspace = true }
+log = { workspace = true }
+once_cell = { workspace = true }
+schema = { path = "../schema" }
+tokio = { workspace = true, features = ["macros", "rt-multi-thread", "test-util", "time"] }
+tokio-stream = { workspace = true }
+tonic = { workspace = true }
+ulid = { workspace = true }

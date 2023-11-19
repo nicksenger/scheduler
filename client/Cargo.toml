@@ -1,0 +1,17 @@
+[package]
+name = "client"
+version = "0.1.0"
+authors = ["Nick Senger <dev@nsenger.com>"]
+edition = "2021"
+
+[dependencies]
+dotenv = { workspace = true }
+env_logger = { workspace = true }
+iced = { version = "0.10", features = ["advanced", "canvas", "tokio"] }
+itertools = { workspace = true }
+log = { workspace = true }
+once_cell = { workspace = true }
+schema = { path = "../schema" }
+tokio = { workspace = true, features = ["rt-multi-thread", "time"] }
+tokio-stream = { workspace = true }
+tonic = { workspace = true }

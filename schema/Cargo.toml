@@ -1,0 +1,16 @@
+[package]
+name = "schema"
+version = "0.1.0"
+authors = ["Nick Senger <dev@nsenger.com>"]
+edition = "2021"
+
+[dependencies]
+prost = { workspace = true }
+prost-types = { workspace = true }
+futures = { workspace = true }
+itertools = { workspace = true }
+once_cell = { workspace = true }
+tonic = { workspace = true }
+
+[build-dependencies]
+tonic-build = { workspace = true }
